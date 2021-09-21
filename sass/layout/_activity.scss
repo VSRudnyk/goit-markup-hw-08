@@ -1,0 +1,36 @@
+/*----------------- Activity -----------------*/
+.activity {
+  @media screen and (max-width: 1139px) {
+    display: none;
+  }
+}
+
+.activity__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * #{$card-set-gap});
+}
+
+.activity__item {
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  margin-right: $card-set-gap;
+}
+
+.activity__wrap {
+  position: relative;
+}
+
+.activity__wrap-text {
+  @include font($fw: 700, $fs: 14px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  color: $white-text-color;
+}

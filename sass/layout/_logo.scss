@@ -1,0 +1,22 @@
+.logo {
+  @include font($fw: 700, $fs: 26px, $lh: 31px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+
+  @media screen and (max-width: 1139px) {
+    @include font($fw: 700, $fs: 24px, $lh: 28px);
+  }
+}
+
+.header__logo {
+  color: $black-text-color;
+
+  &--accent {
+    color: $accent-color;
+  }
+}
+
+.footer__logo {
+  color: #ffffff;
+}

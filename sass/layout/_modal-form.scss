@@ -1,0 +1,127 @@
+/* Modal Form */
+
+.modal-form {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.modal-form__titel {
+  @include font($fw: 700, $fs: 20px, $lh: 23px);
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-form__lable {
+  @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+  display: block;
+  font-style: normal;
+  color: $secondary-text-color;
+  margin-bottom: 4px;
+}
+
+.form-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal-form__input {
+  display: block;
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__input:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.modal-form__textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+
+  &::placeholder {
+    @include font($fs: 12px, $lh: 14px, $ls: 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.modal-form__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-form__checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid $primary-text-color;
+
+  .modal-form__checkbox-input:checked + & {
+    border: none;
+    background-color: $accent-color;
+  }
+}
+
+.modal-form__checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.modal-form__checkbox-lable {
+  @include font($fs: 14px, $lh: 24px);
+  color: $secondary-text-color;
+  margin-left: 8px;
+
+  &--accent {
+    color: $accent-color;
+  }
+}
+
+.form-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

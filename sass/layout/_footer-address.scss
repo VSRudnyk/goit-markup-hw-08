@@ -1,0 +1,62 @@
+/* --------------------- Footer -----------------------------*/
+
+.footer {
+  background-color: $hero-bg-color;
+}
+
+.footer-case {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.address-block {
+  padding: 60px 0 60px 0;
+
+  @media screen and (max-width: 1139px) {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.address {
+  margin-top: 20px;
+}
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1140px) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+%social-link {
+  @include font($fs: 14px, $lh: 24px);
+  margin-top: 20px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__link {
+  @extend %social-link;
+  color: $white-text-color;
+
+  &--transparency {
+    @extend %social-link;
+    color: $white-text-color-60;
+  }
+}

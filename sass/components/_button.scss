@@ -1,0 +1,8 @@
+.btn {
+  @include font($fw: 700, $lh: 30px, $ls: 0.06em);
+  border: none;
+  border-radius: 4px;
+  background-color: $accent-color;
+  color: $white-text-color;
+  cursor: pointer;
+}

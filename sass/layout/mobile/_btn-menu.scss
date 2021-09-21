@@ -1,0 +1,22 @@
+.menu-toggle {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}

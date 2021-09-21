@@ -1,0 +1,50 @@
+/* Site contacts */
+.site-contacts {
+  margin: 0;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1140px) {
+    display: flex;
+  }
+}
+
+.site-contacts__link {
+  @include font($fw: 500, $fs: 14px, $ls: 0.02em);
+  color: $secondary-text-color;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: 1139px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.site-contacts__items {
+  @media screen and (min-width: 1140px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.site-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
