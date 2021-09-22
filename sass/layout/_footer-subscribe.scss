@@ -7,7 +7,6 @@
 
   @media screen and (min-width: 1140px) {
     padding-top: 72px;
-    padding-bottom: 94px;
     margin-left: 93px;
   }
 }
@@ -37,6 +36,7 @@
 
 .subscribe__input {
   padding: 15px 16px;
+  margin-bottom: 20px;
   width: 100%;
   border: 1px solid $border-footer-input-color;
   box-sizing: border-box;

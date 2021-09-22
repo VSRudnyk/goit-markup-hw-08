@@ -1,0 +1,21 @@
+.social--position {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.social-footer {
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1140px) {
+    padding-top: 72px;
+    margin-left: 70px;
+  }
+}

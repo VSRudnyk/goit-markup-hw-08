@@ -452,76 +452,71 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-case">
-          <div class="address-block">
+        <div class="address-block">
             <a href="./index.html" class="logo footer__logo link" lang="en"
-              ><span class="header__logo--accent">Web</span>Studio</a
-            >
+              ><span class="header__logo--accent">Web</span>Studio</a>
             <ul class="address list">
               <li class="address__item">
                 <a class="address__link link" href="https://goo.gl/maps/oTp4s3FLAec8Ka2x9"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                  >г. Киев, пр-т Леси Украинки, 26</a>
               </li>
               <li class="address__item">
                 <a class="address__link--transparency link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                  >info@example.com</a>
               </li>
               <li class="address__item">
                 <a class="address__link--transparency link" href="tel:+380991111111"
-                  >+380991111111</a
-                >
+                  >+380991111111</a>
               </li>
             </ul>
-          </div>
-
-          <div class="social--indent">
-            <h2 class="social__title">Присоединяйтесь</h2>
-            <ul class="social__list list">
-              <li class="social__item">
-                <a class="social__link social__link--bg" href="">
-                  <svg class="social__logo" width="20" height="20">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--bg" href="">
-                  <svg class="social__logo" width="20" height="20">
-                    <use href="./images/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--bg" href="">
-                  <svg class="social__logo" width="20" height="20">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--bg" href="">
-                  <svg class="social__logo" width="20" height="20">
-                    <use href="./images/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <form class="subscribe">
-            <h2 class="social__title">Подпишитесь на рассылку</h2>
-            <label class="subscribe__lable">
-              <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
-            </label>
-            <button class="btn subscribe__btn">
-              Подписаться
-              <svg class="subcribe__logo" width="24" height="24">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
         </div>
+
+        <div class="social-footer">
+          <h2 class="social__title">Присоединяйтесь</h2>
+          <ul class="social__list list">
+            <li class="social__item">
+              <a class="social__link social__link--bg" href="">
+                <svg class="social__logo" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--bg" href="">
+                <svg class="social__logo" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--bg" href="">
+                <svg class="social__logo" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--bg" href="">
+                <svg class="social__logo" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="subscribe">
+          <h2 class="social__title">Подпишитесь на рассылку</h2>
+          <label class="subscribe__lable">
+            <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button class="btn subscribe__btn">
+            Подписаться
+            <svg class="subcribe__logo" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -531,37 +526,43 @@
           <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
         </svg>
       </button>
-      <ul class="mobile-menu list">
-        <li>
-          <a href="./index.html" class="mobile-menu__link link current">Студия</a>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-nav list">
+        <li class="mobile-menu-nav__item">
+          <a href="./index.html" class="mobile-menu-nav__link link">Студия</a>
         </li>
-        <li>
-          <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+        <li class="mobile-menu-nav__item">
+          <a href="./portfolio.html" class="mobile-menu-nav__link link">Портфолио</a>
         </li>
-        <li>
-          <a href="" class="mobile-menu__link link">Контакты</a>
+        <li class="mobile-menu-nav__item">
+          <a href="" class="mobile-menu-nav__link link">Контакты</a>
         </li>
-        <li>
-          <a class="mobile-menu-tel__link link" href="tel:+380961111111">
+      </ul>
+      <ul class="mobile-menu-contacts list">
+        <li class="mobile-menu-contacts__item">
+          <a class="mobile-menu-contacts__tel link" href="tel:+380961111111">
             +38 096 111 11 11</a>
         </li>
-        <li>
-          <a class="mobile-menu-mail__link link" href="mailto:info@devstudio.com">
+        <li class="mobile-menu-contacts__item">
+          <a class="mobile-menu-contacts__email link" href="mailto:info@devstudio.com">
             info@devstudio.com</a>
         </li>
-        <li>
+      </ul>
+      <ul class="mobile-menu-social list">
+        <li class="mobile-menu-social__item">
           <a class="mobile-menu-social__link link" href="">Instagram</a>
         </li>
-        <li>
+        <li class="mobile-menu-social__item">
           <a class="mobile-menu-social__link link" href="">Twitter</a>
         </li>
-        <li>
+        <li class="mobile-menu-social__item">
           <a class="mobile-menu-social__link link" href="">Facebook</a>
         </li>
-        <li>
+        <li class="mobile-menu-social__item">
           <a class="mobile-menu-social__link link" href="">LinkedIn</a>
         </li>
       </ul>
+    </div>
     
     
     
