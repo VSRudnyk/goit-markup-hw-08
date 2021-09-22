@@ -25,10 +25,10 @@
             class="header__logo--accent">Web</span>Studio</a>
         <ul class="site-nav list">
           <li class="site-nav__items">
-            <a href="./index.html" class="site-nav__link link">Студия</a>
+            <a href="./index.html" class="site-nav__link link current">Студия</a>
           </li>
           <li class="site-nav__items">
-            <a href="./portfolio.html" class="site-nav__link link current">Портфолио</a>
+            <a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
           </li>
           <li class="site-nav__items">
             <a href="" class="site-nav__link link">Контакты</a>
@@ -51,6 +51,11 @@
             +380961111111</a>
         </li>
       </ul>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -58,7 +63,7 @@
   <main>
     <section class="section">
       <div class="container">
-        <ul class="filters__list">
+        <ul class="filters__list list">
           <li class="filters__item">
             <button class="btn filters__btn" type="button">Все</button>
           </li>
@@ -79,7 +84,7 @@
         <!-- Наши проекты -->
 
         <h2 hidden>Our projects</h2>
-        <ul class="projects__list">
+        <ul class="projects__list list">
           <li class="projects__item">
             <div class="project-thumb">
               <img src="./images/technocrack.jpg" alt="Ноутбук" width="370" height="294" />
@@ -222,16 +227,14 @@
   </main>
 
   <!-- Подвал -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-case">
+    <footer class="footer">
+      <div class="container">
         <div class="address-block">
           <a href="./index.html" class="logo footer__logo link" lang="en"><span
               class="header__logo--accent">Web</span>Studio</a>
           <ul class="address list">
             <li class="address__item">
-              <a class="address__link link" href="https://goo.gl/maps/oTp4s3FLAec8Ka2x9">г. Киев, пр-т Леси Украинки,
-                26</a>
+              <a class="address__link link" href="https://goo.gl/maps/oTp4s3FLAec8Ka2x9">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li class="address__item">
               <a class="address__link--transparency link" href="mailto:info@example.com">info@example.com</a>
@@ -241,8 +244,8 @@
             </li>
           </ul>
         </div>
-  
-        <div class="social--indent">
+    
+        <div class="social-footer">
           <h2 class="social__title">Присоединяйтесь</h2>
           <ul class="social__list list">
             <li class="social__item">
@@ -275,6 +278,7 @@
             </li>
           </ul>
         </div>
+    
         <form class="subscribe">
           <h2 class="social__title">Подпишитесь на рассылку</h2>
           <label class="subscribe__lable">
@@ -288,8 +292,55 @@
           </button>
         </form>
       </div>
-    </div>
-  </footer>
+    </footer>
+    
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-nav list">
+          <li class="mobile-menu-nav__item">
+            <a href="./index.html" class="mobile-menu-nav__link link">Студия</a>
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a href="./portfolio.html" class="mobile-menu-nav__link link">Портфолио</a>
+          </li>
+          <li class="mobile-menu-nav__item">
+            <a href="" class="mobile-menu-nav__link link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-contacts list">
+          <li class="mobile-menu-contacts__item">
+            <a class="mobile-menu-contacts__tel link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu-contacts__item">
+            <a class="mobile-menu-contacts__email link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-social list">
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__link link" href="">Instagram</a>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__link link" href="">Twitter</a>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__link link" href="">Facebook</a>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    
+    
+    
+      <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
