@@ -1,11 +1,11 @@
 .subscribe {
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     margin: 0 auto;
     text-align: center;
     padding-top: 0;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 72px;
     margin-left: 93px;
   }
@@ -28,7 +28,7 @@
   @media screen and (min-width: 780px) {
     width: 450px;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     display: inline-flex;
   }
@@ -50,7 +50,7 @@
   align-items: center;
   padding: 10px 29px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 12px;
   }
 }

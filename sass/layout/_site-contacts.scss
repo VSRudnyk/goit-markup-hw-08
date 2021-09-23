@@ -11,7 +11,7 @@
     display: block;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -30,14 +30,14 @@
     color: $accent-color;
   }
 
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 5px;
     padding-bottom: 5px;
   }
 }
 
 .site-contacts__items {
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 50px;
     }
