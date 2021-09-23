@@ -5,15 +5,21 @@
 .filters__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
-.filters__item + .filters__item {
-  margin-left: 8px;
+.filters__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
 }
 .filters__btn {
   @include font($fw: 500, $lh: 26px);
