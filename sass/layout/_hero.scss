@@ -10,11 +10,23 @@
     url(../images/hero-img-mob@1x.jpg);
   background-size: cover;
 
-  @media (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/hero-img-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url(../images/hero-img-tab@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-img-tab@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -22,13 +34,13 @@
     padding-bottom: 200px;
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
       url(../images/hero-img-desk@1x.jpg);
-  }
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero-img-desk@2x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-img-desk@2x.jpg);
+    }
   }
 }
 .hero__title {
