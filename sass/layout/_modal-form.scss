@@ -109,12 +109,16 @@
 }
 
 .modal-form__checkbox-lable {
-  @include font($fs: 14px, $lh: 24px);
+  @include font($fs: 12px, $lh: 14px);
   color: $secondary-text-color;
   margin-left: 8px;
 
   &--accent {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font($fs: 14px, $lh: 24px);
   }
 }
 

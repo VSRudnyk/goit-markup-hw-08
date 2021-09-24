@@ -60,10 +60,11 @@
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
-.quality__title {
   @include font($fw: 700, $fs: 14px);
   color: $primary-text-color;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .quality__description {
