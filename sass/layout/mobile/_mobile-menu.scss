@@ -18,13 +18,13 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 21px;
-  right: 25px;
+  top: 10px;
+  right: 15px;
   fill: $primary-text-color;
 }
 
 .mobile-menu-nav {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-nav__item {
@@ -42,6 +42,13 @@
     color: $accent-color;
   }
 }
+
+.mobile-menu-contacts-wrap {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+}
+
 .mobile-menu-contacts {
   margin-bottom: 64px;
 }
@@ -53,13 +60,21 @@
 }
 
 .mobile-menu-contacts__tel {
-  @include font($fw: 500, $fs: 34px, $lh: 40px, $ls: 0.02em);
+  @include font($fw: 500, $fs: 27px, $lh: 40px, $ls: 0.02em);
   color: $accent-color;
+
+  @media screen and (min-width: 480px) {
+    @include font($fw: 500, $fs: 34px, $lh: 40px, $ls: 0.02em);
+  }
 }
 
 .mobile-menu-contacts__email {
-  @include font($fw: 500, $fs: 24px, $lh: 28px, $ls: 0.02em);
+  @include font($fw: 500, $fs: 18px, $lh: 28px, $ls: 0.02em);
   color: $secondary-text-color;
+
+  @media screen and (min-width: 480px) {
+    @include font($fw: 500, $fs: 24px, $lh: 40px, $ls: 0.02em);
+  }
 }
 
 .mobile-menu-social {
@@ -76,6 +91,10 @@
 }
 
 .mobile-menu-social__link {
-  @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
+  @include font($fw: 500, $fs: 10px, $lh: 22px, $ls: 0.02em);
   color: $accent-color;
+
+  @media screen and (min-width: 480px) {
+    @include font($fw: 500, $fs: 18px, $lh: 22px, $ls: 0.02em);
+  }
 }
